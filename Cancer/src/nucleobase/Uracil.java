@@ -1,6 +1,6 @@
 package nucleobase;
 
-public class Uracil implements Nucleobase {
+public class Uracil implements RNABase {
 
 	public Uracil() {
 		
@@ -19,5 +19,10 @@ public class Uracil implements Nucleobase {
 	@Override
 	public String toString() {
 		return getName();
+	}
+
+	@Override
+	public RNABase getRNABasePair() {
+		return new Adenine();
 	}
 }

@@ -1,6 +1,7 @@
 package nucleobasetest;
 
 import static org.junit.Assert.*;
+import nucleobase.Adenine;
 import nucleobase.Uracil;
 
 import org.junit.BeforeClass;
@@ -29,5 +30,9 @@ public class UracilTest {
 	public void toStringTest() {
 		assertEquals("uracil", uracil.toString());
 	}
-
+	
+	@Test
+	public void getRNABasePairTest() {
+		assertEquals(Adenine.class, uracil.getRNABasePair().getClass());
+	}
 }

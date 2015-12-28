@@ -1,6 +1,6 @@
 package nucleobase;
 
-public class Adenine implements Nucleobase{
+public class Adenine implements DNABase,RNABase {
 	
 	public Adenine() {
 		
@@ -19,5 +19,15 @@ public class Adenine implements Nucleobase{
 	@Override
 	public String toString() {
 		return getName();
+	}
+
+	@Override
+	public RNABase getRNABasePair() {
+		return new Uracil();
+	}
+
+	@Override
+	public DNABase getDNABasePair() {
+		return new Thymine();
 	}
 }

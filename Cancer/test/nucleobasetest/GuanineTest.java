@@ -1,6 +1,7 @@
 package nucleobasetest;
 
 import static org.junit.Assert.*;
+import nucleobase.Cytosine;
 import nucleobase.Guanine;
 
 import org.junit.BeforeClass;
@@ -30,4 +31,13 @@ public class GuanineTest {
 		assertEquals("guanine", guanine.toString());
 	}
 
+	@Test
+	public void getDNABasePairTest(){
+		assertEquals(Cytosine.class, guanine.getDNABasePair().getClass());
+	}
+	
+	@Test
+	public void getRNABasePairTest() {
+		assertEquals(Cytosine.class, guanine.getRNABasePair().getClass());
+	}
 }

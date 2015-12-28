@@ -2,6 +2,8 @@ package nucleobasetest;
 
 import static org.junit.Assert.*;
 import nucleobase.Adenine;
+import nucleobase.Thymine;
+import nucleobase.Uracil;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -30,4 +32,13 @@ public class AdenineTest {
 		assertEquals("adenine", adenine.toString());
 	}
 	
+	@Test
+	public void getDNABasePairTest(){
+		assertEquals(Thymine.class, adenine.getDNABasePair().getClass());
+	}
+	
+	@Test
+	public void getRNABasePairTest() {
+		assertEquals(Uracil.class, adenine.getRNABasePair().getClass());
+	}
 }

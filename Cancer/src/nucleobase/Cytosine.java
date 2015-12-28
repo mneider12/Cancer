@@ -1,6 +1,6 @@
 package nucleobase;
 
-public class Cytosine implements Nucleobase {
+public class Cytosine implements DNABase, RNABase {
 	
 	public Cytosine() {
 		
@@ -19,5 +19,15 @@ public class Cytosine implements Nucleobase {
 	@Override
 	public String toString() {
 		return getName();
+	}
+
+	@Override
+	public RNABase getRNABasePair() {
+		return new Guanine();
+	}
+
+	@Override
+	public DNABase getDNABasePair() {
+		return new Guanine();
 	}
 }

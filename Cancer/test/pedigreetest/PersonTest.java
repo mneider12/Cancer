@@ -2,6 +2,8 @@ package pedigreetest;
 
 import static org.junit.Assert.*;
 
+import java.util.ArrayList;
+
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -31,10 +33,17 @@ public class PersonTest {
 		assertEquals(Gender.female, fullTest.getGender());
 		Person mother = new Person(new Trait("mother"), Gender.female);
 		Person father = new Person(new Trait("father"), Gender.male);
-		Person parentTest = new Person(new Trait("born"), Gender.male, mother, father);
+		Person son = new Person(new Trait("Jack"), Gender.male);
+		Person daughter = new Person(new Trait("Jill"), Gender.female);
+		ArrayList<Person> children = new ArrayList<Person>();
+		children.add(son);
+		children.add(daughter);
+		Person parentTest = new Person(new Trait("born"), Gender.male, mother, father, children);
 		assertEquals("born", parentTest.getTrait().getName());
 		assertEquals(mother, parentTest.getMother());
 		assertEquals(father, parentTest.getFather());
+		assertEquals(son, parentTest.getChildren().get(0));
+		assertEquals(daughter, parentTest.getChildren().get(1));
 	}
 	
 	/*

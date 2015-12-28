@@ -1,32 +1,33 @@
 package nucleobasetest;
 
 import static org.junit.Assert.*;
-import nucleobase.Cytosine;
+import nucleobase.Uracil;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-public class CytosineTest {
+public class UracilTest {
 
-	private static Cytosine cytosine;
+	private static Uracil uracil;
 	
 	@BeforeClass
 	public static void oneTimeSetup() {
-		cytosine = new Cytosine();
+		uracil = new Uracil();
 	}
 	
 	@Test
 	public void getSymbolTest() {
-		assertEquals("C", cytosine.getSymbol());
+		assertEquals("U", uracil.getSymbol());
 	}
 
 	@Test
 	public void getNameTest() {
-		assertEquals("cytosine", cytosine.getName());
+		assertEquals("uracil", uracil.getName());
 	}
 	
 	@Test
 	public void toStringTest() {
-		assertEquals("cytosine", cytosine.toString());
+		assertEquals("uracil", uracil.toString());
 	}
+
 }

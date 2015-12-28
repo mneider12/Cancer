@@ -1,19 +1,19 @@
 package nucleobase;
 
-public class Thymine implements Nucleobase {
+public class Uracil implements Nucleobase {
 
-	public Thymine() {
+	public Uracil() {
 		
 	}
 	
 	@Override
 	public String getSymbol() {
-		return "T";
+		return "U";
 	}
 
 	@Override
 	public String getName() {
-		return "thymine";
+		return "uracil";
 	}
 
 	@Override

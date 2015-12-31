@@ -6,3 +6,11 @@
 header {
 	colspan=2
 }
+
+td {
+	border: 1px solid black;
+}
+
+.stop {
+	background-color: grey;
+}

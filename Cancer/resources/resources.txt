@@ -2,3 +2,6 @@
 	https://www.udacity.com/course/tales-from-the-genome--bio110
 	Introduction course on genomics.
 	
+* Genetic code - Wikipedia
+	https://en.wikipedia.org/wiki/Genetic_code
+	Web encylopedia and codon chart

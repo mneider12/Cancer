@@ -14,3 +14,19 @@ td {
 .stop {
 	background-color: grey;
 }
+
+.nonpolar {
+	background-color: gold;
+}
+
+.polar {
+	background-color: aqua;
+}
+
+.basic {
+	background-color: blueviolet;
+}
+
+.acidic {
+	background-color: pink;
+}

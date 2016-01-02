@@ -30,4 +30,15 @@ public class Cytosine implements DNABase, RNABase {
 	public DNABase getDNABasePair() {
 		return new Guanine();
 	}
+
+	@Override
+	public boolean equals(Object obj) {
+		return obj.getClass().equals(Cytosine.class);
+	}
+	
+	@Override
+	public int hashCode() {
+		return 2;
+	}	
 }
+

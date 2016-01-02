@@ -25,4 +25,14 @@ public class Thymine implements DNABase {
 	public DNABase getDNABasePair() {
 		return new Adenine();
 	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		return obj.getClass().equals(Thymine.class);
+	}
+	
+	@Override
+	public int hashCode() {
+		return 4;
+	}
 }

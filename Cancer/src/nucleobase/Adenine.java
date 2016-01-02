@@ -30,4 +30,15 @@ public class Adenine implements DNABase,RNABase {
 	public DNABase getDNABasePair() {
 		return new Thymine();
 	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		return obj.getClass().equals(Adenine.class);
+	}
+	
+	@Override
+	public int hashCode() {
+		return 1;
+	}
+	
 }

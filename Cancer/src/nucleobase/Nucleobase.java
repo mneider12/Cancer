@@ -1,6 +1,6 @@
 package nucleobase;
 
-public interface Nucleobase {
+public interface Nucleobase{
 
 	public String getSymbol();
 	

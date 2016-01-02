@@ -25,4 +25,14 @@ public class Uracil implements RNABase {
 	public RNABase getRNABasePair() {
 		return new Adenine();
 	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		return obj.getClass().equals(Uracil.class);
+	}
+	
+	@Override
+	public int hashCode() {
+		return 5;
+	}
 }
